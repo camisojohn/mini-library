@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Activity: Mini Online Library System (MERN + JWT + RBAC)
 
 Instructions
@@ -24,3 +25,6 @@ SUBMISSION REQUIREMENT: GitHub repository link (containing both frontend and bac
 
 
 ahihihihi
+=======
+# mini-library
+>>>>>>> da2890cdb877a58863546c552a2ccfc92e6e30a6
