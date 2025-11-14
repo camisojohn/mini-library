@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.books-container, .add-book-container {
+  background-color: rgb(44, 46, 49);
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0, 51, 102, 0.1);
+    border: 1px solid #dae6f4;
+}
+
+.books-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Floating  Book Cards */
+.books-container li {
+    color: var(--royal-blue);
+    margin: 0;
+    padding: 18px 24px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.books-container li:hover {
+    border-color: var(--royal-blue);
+    transform: scale(1.02);
+    color: wheat;
+    box-shadow: 0 5px 15px rgba(0, 51, 102, 0.15);
+}
+
+/* Add Book Form */
+.add-book-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-book-container input {
+    padding: 15px;
+    background: var(--milky-blue-bg);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    outline: none;
+    color: var(--royal-blue);
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    transition: 0.3s ease;
+}
+
+.add-book-container input:focus {
+    background: white;
+    border-color: var(--royal-blue);
+    box-shadow: 0 0 0 4px var(--milky-blue-accent);
+}
+
+.add-book-container button {
+    background: var(--royal-blue);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(0, 51, 102, 0.3);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.add-book-container button:hover {
+    background: var(--royal-blue-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 51, 102, 0.5);
+}

@@ -1,0 +1,23 @@
+:root {
+    /* Your Color Palette 💙 */
+    --milky-blue: #b0e0e6;  /* Soft and dreamy */
+    --royal-blue: #4169e1;  /* Deep and confident */
+    --bg-color: #f0f8ff;    /* AliceBlue - very subtle tint */
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Applying the vibe */
+    background-color: var(--bg-color);
+    color: #333;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

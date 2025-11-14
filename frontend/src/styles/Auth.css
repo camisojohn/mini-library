@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.auth-container {
+    background: white;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0, 51, 102, 0.12);
+    border: 1px solid #dae6f4;
+}
+
+.auth-container h2 {
+    text-align: center;
+    color:wheat;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-container input,
+.auth-container select {
+    padding: 15px;
+    background: var(--milky-blue-bg);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    color:black;
+    background-color: rgb(185, 181, 181);
+    font-weight: 500;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.auth-container input:focus,
+.auth-container select:focus {
+    background: white;
+    border-color: var(--royal-blue);
+    box-shadow: 0 0 0 4px var(--milky-blue-accent);
+}
+
+.auth-container button {
+    background: var(--royal-blue);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(0, 51, 102, 0.3);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); 
+}
+
+.auth-container button:hover {
+    background-color: rgb(123, 123, 156);
+    box-shadow: 0 8px 25px rgba(0, 51, 102, 0.5);
+}

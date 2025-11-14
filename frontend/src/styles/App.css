@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* 🌟 Root Variables - Clean Modern Colors */
+:root {
+  --accent-color: #0077b6;
+  --accent-hover: #005f87;
+  --text-dark: #222;
+  --text-light: #555;
+  --shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 🪄 Reset and base styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  /* 🖼️ Background Image */
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/* 🧭 Basic Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(44, 46, 49);
+  padding: 5px 30px;
+  color: #dbdada;
+}
+
+.navbar .logo {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar a {
+    color: wheat;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #2085d8;
+}
+
+/* 🚀 Navbar Button */
+.navbar button {
+  background: white;
+  color: var(--accent-color);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.navbar button:hover {
+  background: #2085d8; /* hover background color */
+  color: white;         /* text color change on hover */
+  transform: translateY(-1px);
+}
+
+/* Optional Auth Container */
+.auth-container {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 20px auto;
+  color: white;
+}
+
+/* Title styling */
+.title {
+  text-align: right; 
+    color: wheat;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* 🧠 Titles and text */
+h1, h2, h3 {
+    color: wheat;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* ✨ Card Example */
+.card {
+  background: rgb(85, 30, 196);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .navbar a {
+    margin: 8px 0;
+  }
+
+  .app-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .title {
+    text-align: left; /* adjust alignment for smaller screens */
+  }
+}
